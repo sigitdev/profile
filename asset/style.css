@@ -93,7 +93,7 @@ body::-webkit-scrollbar {
 .background-hero>div:nth-child(3) {
     height: 50%;
     width: 10%;
-    background-color: rgb(174, 113, 231);
+    background-color: #ae71e7;
     top: 20%;
     left: 45%;
     animation: to-bottom 5s ease infinite;
@@ -144,7 +144,8 @@ body::-webkit-scrollbar {
 }
 
 
-.section-about-text>div:nth-child(1), .section-about-text>div:nth-child(2)  {
+.section-about-text>div:nth-child(1),
+.section-about-text>div:nth-child(2) {
     font-weight: bold;
 }
 
@@ -242,7 +243,7 @@ body::-webkit-scrollbar {
     padding-top: 100px;
 }
 
-.section-experience>.sc-exp-body>.row>.col-md-6:nth-child(2)>div:nth-child(1) {
+.section-experience>.sc-exp-body>.row>.col-md-6:nth-child(2)>div>div:nth-child(1) {
     color: #4fd6b7;
 }
 
@@ -251,7 +252,7 @@ body::-webkit-scrollbar {
 }
 
 
-.section-experience>.sc-exp-body>.row>.col-md-6:nth-child(2)>div:not(.porto):nth-child(n+2):hover {
+.section-experience>.sc-exp-body>.row>.col-md-6:nth-child(2)>div>div:not(.porto):nth-child(n+2):hover {
     cursor: pointer;
     background-image: linear-gradient(to right, transparent 30%, var(--teal) 100%);
 }
