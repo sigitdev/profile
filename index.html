@@ -55,21 +55,25 @@
                         <div class="text-start" style="margin-top:30px">
                             <div style="font-size: 12px; color:grey">2023 July - Present</div>
                             <div style="font-size:30px">PT Micronet Gigatech Indoglobal</div>
-                            As Software Team Lead.
+                            Discuss about what client needed with the software team, make tech stack for new software,
+                            designing mockup, make the task to team, coordinating with client about apps update,
+                            coordinating with client about new feature.
                         </div>
                         <div class="text-start" style="margin-top:30px">
                             <div style="font-size: 12px; color:grey">2022 October - 2023 June</div>
                             <div style="font-size:30px">PT Indraco Global Indonesia</div>
-                            As Web Developer.
+                            Build tools to cut the time from a content to email ready, build payment method and
+                            syncronizing point system, action blasting as scheduled with marketing division.
                         </div>
                         <div class="text-start" style="margin-top:30px">
                             <div style="font-size: 12px; color:grey">2016 December - 2022 September</div>
                             <div style="font-size:30px">PT Micronet Gigatech Indoglobal</div>
-                            As Web Developer.
+                            Building Web Aplication, report update to client, discuss about business process with
+                            client, train about new feature.
                         </div>
                     </div>
 
-                    <div class="shadow"
+                    <!-- <div class="shadow"
                         style="width: 80%;min-height: 200px;border-radius: 10px;background-image: linear-gradient(to right, #4fd6b7 50%, #ae71e7 100%);margin-top:30px;padding:30px;font-size: 40px;font-style: italic;"
                         data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
                         data-aos-mirror="true" data-aos-once="false" data-aos-offset="600">
@@ -77,11 +81,12 @@
                         forever."
                         <br>
                         <span style="font-size: 20px;">- Mahatma Gandhi</span>
-                    </div>
+                    </div> -->
 
-                    <div class="text-start" style="margin-top: 60px;" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                    data-aos-mirror="true" data-aos-once="false" data-aos-offset="600">
-                        <h3 style="color: #4fd6b7;">Some Of My Social Media Post</h3>
+                    <div class="text-start" style="margin-top: 60px;" data-aos="fade-down" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+                        data-aos-offset="600">
+                        <h3 style="color: #4fd6b7;">Some Post</h3>
                         <div style="margin-top: 30px;width: 80%;">
                             <blockquote class="instagram-media" data-instgrm-captioned
                                 data-instgrm-permalink="https://www.instagram.com/p/C9uYuTmv3C1/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -215,20 +220,43 @@
                                 Open Layer | Bootstrap</div>
                         </div>
                     </div>
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="false" style="margin-top: 60px;">
+                        <div>
+                            <h3>What I Usually Use and I Am Able to Use it</h3>
+                        </div>
+                        <div id="list-stack">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="sosmed-nav">
         <ul>
-            <li><i class="bi bi-instagram"></i></li>
-            <li><i class="bi bi-linkedin"></i></li>
-            <li><i class="bi bi-threads"></i></li>
-            <li><i class="bi bi-github"></i></li>
+            <li><a href="https://www.linkedin.com/in/sigit-wahyu-wibowo-48a971134"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/langit_biroe_/"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.threads.com/@langit_biroe_"><i class="bi bi-threads"></i></a></li>
+            <li><a href="https://github.com/sigitdev"><i class="bi bi-github"></i></a></li>
         </ul>
         <div></div>
     </div>
-    <div style="height: 100vh;width:100%"></div>
+    <div class="section-footer" style="height: 50vh;width:100%">
+        <div style="width:fit-content;margin-top:200px;margin-left:auto;margin-right:auto" class="text-center">
+            <div style="font-size: 30px;" class="title-lets-connect">
+                <span class="fw-bold">Have Some Idea ?</span> Let's Connect !
+            </div>
+            <div class="btn btn-purple shadow">
+                Send Email <i class="bi bi-send"></i>
+            </div>
+
+            <div>
+                
+            </div>
+        </div>
+    </div>
     <script src="asset/jquery.min.js"></script>
     <script src="asset/bootstrap/js/bootstrap.min.js"></script>
     <script src="asset/aos-master/dist/aos.js"></script>
@@ -256,6 +284,8 @@
         },
         ];
 
+        var listStack = ['Javascipt', 'PHP', 'CSS', 'Laravel', 'Node.js', 'PostgreeSQL', 'MySQL', 'JQuery', 'Springboot', 'React', 'Vue', 'Nest.js', 'Docker'];
+
         $(document).ready(function () {
 
             AOS.init();
@@ -271,6 +301,8 @@
                     $(".sc-exp-background").find('.star').css('transform', 'rotate(' + rotate * 0.2 + 'deg)');
                 }
             });
+
+            showListStack();
         });
 
         function showPorto(el) {
@@ -296,6 +328,17 @@
                     $(`#porto-${id} > div`).addClass('to-top-fixed');
                 });
             }
+
+        }
+
+        function showListStack() {
+
+            let str = '';
+            listStack.forEach(e => {
+                str += `<div class="gradient-badge">${e}</div>`;
+            });
+
+            $("#list-stack").html(str);
 
         }
     </script>
