@@ -1,3 +1,7 @@
+body {
+    background-color: #fff;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -300,10 +304,15 @@ body::-webkit-scrollbar {
 .sosmed-nav>ul>li {
     list-style: none;
     font-size: 30px;
+}
+
+
+.sosmed-nav>ul>li>a {
+    list-style: none;
     color: grey;
 }
 
-.sosmed-nav>ul>li:hover {
+.sosmed-nav>ul>li>a:hover {
     color: var(--teal);
     cursor: pointer;
 }
@@ -314,4 +323,39 @@ body::-webkit-scrollbar {
     background-color: var(--teal);
     margin-left: 45px;
     margin-right: auto;
+}
+
+.gradient-badge {
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #4fd6b7 30%, #ae71e7 100%);
+    padding: 0px 10px 0px 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-right : 5px;
+    margin-top: 10px;
+}
+
+.section-footer {
+    font-size: 30px;
+}
+
+.section-footer .title-lets-connect {
+    margin-bottom : 30px;
+}
+
+.btn-purple {
+    background-color: #ae71e7;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-purple:hover{
+    background-color: #975dce;
+    color: #fff;
+}
+
+.btn-purple:focus{
+    background-color: #975dce;
+    color: #fff;
 }
