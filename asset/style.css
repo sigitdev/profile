@@ -478,4 +478,10 @@ body::-webkit-scrollbar {
     .section-experience .row .col-md-6:nth-child(2) [style*="font-size:50px"] {
         font-size: 32px !important;
     }
+
+    /* Hide star icon and sc-exp-background on mobile */
+    .sc-exp-background,
+    .sc-exp-background .star {
+        display: none !important;
+    }
 }
